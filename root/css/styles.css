@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Combo', cursive;
+}
+
+.flex{
+    display: flex;
+}
+.columna{
+    flex-direction: column;
+}
+
+/* HEADER */
+header{
+    background-color: rgb(255, 244, 123);
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    align-self: flex-start;
+    background-color: rgb(101, 226, 33);
+    height: 40%;
+    width: 17%;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 0.5%;
+    margin-left: 8%;
+    margin-top: 1.5%;
+}
+nav{
+    width: 80%;
+    height: 30%;
+}
+nav ul{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li{
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    font-size: 40px;
+    background-color: #ffcb3e ;
+    border-radius: 20px 20px 0 0;
+    padding-top: 0.3%;
+    transition: all 0.5s;
+}
+nav ul li:hover{
+    width: 500px;
+}
+nav ul li a:hover{
+    color: aliceblue;
+    filter: drop-shadow(5px 5px 3px black);
+}
+li#disneyNaranja:hover{
+    background-color: rgb(255, 128, 0);
+}
+li#marvelRojo:hover{
+    background-color: rgb(251, 60, 60);
+}
+li#pixarAzul:hover{
+    background-color: rgb(81, 144, 253);
+}
+li#princesasRosa:hover{
+    background-color: rgb(248, 132, 152);
+}
+
+/* MAIN */
+main{
+    height: 70vh;
+    width: 90vw;
+    margin: 0 5%;
+    padding: 1% 0;
+    justify-content: space-between;
+    align-items: center;
+}
+main section{
+    width: 90%;
+    height: 50%;
+    align-items: center;
+}
+main section a{
+    width: 50%;
+    height: 90%;
+    justify-content: center;
+    text-align: center;
+}
+main section a div{
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition-property: transform;
+    transition-duration: 0.8s;
+}
+#disney{
+    background-image: url("../img/disneybg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#marvel{
+    background-image: url("../img/marvelbg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pixar{
+    background-image: url("../img/pixarbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#princesas{
+    background-image: url("../img/princesasbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section a div h2{
+    color: white;
+    font-size: 90px;
+    text-shadow: 7px 5px 6px black;
+}
+
+main section a div:hover{
+    transform: scale(1.2);
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+/* FOOTER */
+footer{
+    height: 10vh;
+    background-color: violet;
+    justify-content: space-between;
+    border: 2px solid black;
+
+}
+footer div{
+    margin-left: 7%;
+    margin-top: 0.5%;
+    height: 80%;
+    width: 50%;
+
+}
+
+form {
+    width: 16.5%;
+    justify-content: space-between;
+    padding-bottom: 0.5%;
+    border-radius: 30px;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: rgb(255, 0, 191);
+    font-size: 30px;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+label:hover, label:hover ~ label {
+    color: rgb(246, 255, 0);
+}
+
+input[type="radio"]:checked ~ label {
+    color: rgb(255, 225, 0);
+}
+
+footer p{
+
+    font-size: 20px;
+    font-weight: bold;
+
+    
+}
+footer > p{
+    margin-top: 3%;
+    width: 30%;
+    align-self: flex-end;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
